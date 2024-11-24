@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Sandbox Lite</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ui">
+        <button class="glow-btn" onclick="addPlanet()">Add Planet</button>
+        <button class="glow-btn" onclick="addStar()">Add Star</button>
+        <button class="glow-btn" onclick="createBlackHole()">Create Black Hole</button>
+        <button class="glow-btn" onclick="enableAnchorMode()">Anchor</button>
+        <button class="glow-btn" onclick="toggleSimulation()" id="runButton">Run</button>
+        <button class="glow-btn" onclick="clearObjects()">Clear</button>
+        <button class="glow-btn" onclick="toggleTrails()" id="trailsButton">Turn On Trails</button>
+        <button class="glow-btn" onclick="toggleGravity()" id="gravityButton">Turn Off Gravity</button>
+        <input type="file" id="loadInput" style="display: none;" />
+        <button class="glow-btn" id="saveButton">Save Universe</button>
+        <button class="glow-btn" onclick="document.getElementById('loadInput').click()">Load Universe</button>
+
+    </div>
+
+    <div id="anchorPopup" class="popup">
+        Click on a celestial body to anchor it in place.
+    </div>
+    <div id="blackHolePopup" class="popup">
+        Click to place a black hole.
+    </div>
+
+    <div id="introMenu" class="settings-menu glow-btn">
+        <button id="closeMenu" class="close-btn">X</button>
+        <h2>Welcome to Universe Sandbox Lite</h2>
+        <p>Explore and create your own celestial objects in the universe!</p>
+        <h3>Instructions:</h3>
+        <ul>
+            <li><strong>Add Planet:</strong> Click the "Add Planet" button to spawn a new planet at a random location with random color and size.</li>
+            <li><strong>Add Star:</strong> Click the "Add Star" button to create a massive star in the center of the universe.</li>
+            <li><strong>Create Black Hole:</strong> Click the "Create Black Hole" button, then click anywhere on the canvas to place the black hole.</li>
+            <li><strong>Anchor Mode:</strong> Enable "Anchor" mode and click on a celestial body to anchor it in place.</li>
+            <li><strong>Run/Pause Simulation:</strong> Use the "Run" button to start or stop the simulation.</li>
+            <li><strong>Clear Objects:</strong> Click "Clear" to remove all celestial bodies from the canvas.</li>
+            <li><strong>Toggle Trails:</strong> Use the "Turn On/Off Trails" button to enable or disable the trails left by celestial bodies.</li>
+            <li><strong>Toggle Gravity:</strong> Use the "Turn On/Off Gravity" button to activate or deactivate gravity effects.</li>
+            <li><strong>Save/Load:</strong> This button will save your current universe which can be loaded in later with a JSON file.</li>
+        </ul>
+        <h3>Extra features:</h3>
+        <ul>
+            <li><strong>Binary black hole inspiral:</strong> When two black holes collide, all surrounding planets and stars will get blown outwards!</li>
+
+        </ul>
+    </div>
+    
+    
+
+    <canvas id="universe"></canvas>
+
+    <script src="sandbox.js"></script>
+
+</body>
+</html>
+
