@@ -14,4 +14,4 @@ Save/Load: This button will save your current universe which can be loaded in la
 
 Extra features:
 
-Binary black hole inspiral:</strong> When two black holes collide, all surrounding planets and stars will get blown outwards!
+Binary black hole inspiral: When two black holes collide, all surrounding planets and stars will get blown outwards!
